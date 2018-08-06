@@ -3,6 +3,19 @@
 var veriable 
 
 // definition of fixed valued variables ( İlk tanımladığımız değeri dışında farklı bir değer ataması yapılamaz ) 
-val VeriAble
+val veriAble
+
+
+
+// Veriable Name  and then :Type  = Values (Değişkenin Sabit/Sonradan Değiştirilir Yaptıktan Sonra Değişlenin ismi :'den sonra tipi ='den sonra değerini belirtilir.
+// Examples is Statick Veriable
+Val veriable:Float = 1.2
+Val veriable2:String = "adsasdsasdsadasd"
+Val veriavle3:Integer = 1234123
+
+// Example is Not Static Veriables
+Var veriable:Float = 1.2
+Var veriable2:String = "adsasdsasdsadasd"
+Var veriavle3:Integer = 1234123
 
 
