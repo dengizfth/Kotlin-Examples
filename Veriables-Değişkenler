@@ -1,0 +1,8 @@
+
+//definition of not fixed valued variables ( Sonrada Değerini Değiştirebildiğimiz değişken tanımı)
+var veriable 
+
+// definition of fixed valued variables ( İlk tanımladığımız değeri dışında farklı bir değer ataması yapılamaz ) 
+val VeriAble
+
+
