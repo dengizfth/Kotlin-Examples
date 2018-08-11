@@ -9,13 +9,46 @@ val veriAble
 
 // Veriable Name  and then :Type  = Values (Değişkenin Sabit/Sonradan Değiştirilir Yaptıktan Sonra Değişlenin ismi :'den sonra tipi ='den sonra değerini belirtilir.
 // Examples is Statick Veriable
-Val veriable:Float = 1.2
-Val veriable2:String = "adsasdsasdsadasd"
-Val veriavle3:Integer = 1234123
+val veriable:Float = 1.2
+val veriable2:String = "adsasdsasdsadasd"
+val veriavle3:Integer = 1234123
+ val pi: Double = 3.4
 
 // Example is Not Static Veriables
-Var veriable:Float = 1.2
-Var veriable2:String = "adsasdsasdsadasd"
-Var veriavle3:Integer = 1234123
+var veriable:Float = 1.2
+var veriable2:String = "adsasdsasdsadasd"
+var veriavle3:Integer = 1234123
 
+
+
+
+    // "?" is  veriable  can be Null ( Değişkenin Nul olabileceğini belirtir)
+    var dep: String?
+    dep = "Web"
+    // View in the Consolo
+    println("dep: " + dep)
+   
+ 
+ 
+ // Getting information from the consoles 
+   
+    print("Enter name: ")
+    var name = readLine()
+    
+// !!(non-null) Must be a value in the veriable and Type conversions for Input Values
+//all the values entered in the console are in the type of the character
+    print("Enter n: ")
+    var n:Int = readLine()!!.toInt()
+    print("Enter dep: ")
+    var dep: String?
+    dep = readLine()
+ // Getting information from the consoles and Type conversions for Input Values
+ //all the values entered in the console are in the type of the character
+    print("Enter pi: ")
+    var pi: Double = readLine()!!.toDouble()
+
+    println("name: " + name)
+    println("n: " + n)
+    println("dep: " + dep)
+    println("pi: " + pi)   
 
