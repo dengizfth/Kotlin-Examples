@@ -43,8 +43,31 @@ intArray.set(2, 4123)
 intArray.set(1122, 41233)    // Dizinin son elemanınıda ekledik. Dikkat : Son elemanı dizinin boyutundan 1'eksiğinci sıradadır.
 
 
+/*
+Diziden Değer Okuma
+Diziden değerleri diziAdi[indeks]  şeklinde veya diziAdi.get(indeks) şeklinde okuyabiliriz.
 
 
+Diziden Değerleri oku/Çağır/almak  ' tan sonra bunları istersen konsoldan istersekde her hangi bir yerde kullanabiliriz ve 
+görüntü sağlaya biliriz . 
+Konsoldan Ekrana ve Eğer .XML dosyanıda bir TextView oluşturulduğunu var sayarak  çekilen bilgileri bizim reelde görebileceğimiz durumu getireceğiz.
+*/
+
+// Diziden veri çekmek için :
+intArray[0] // dediğimizde bize dizinin 0. elemanını getirir. Eğer konsoldan görüntülemek istersek:
+println(intArray[0])  // ya da
+print(intArray[0]) // şeklinde görüntüleyebiliriz.
+//Ya da elinizde bir .XML dosyası ve bu dosya içersinde TextView oluşturup id:textView olan uygulamayı Android Uygulama arayüzünde görmek için:
+textView.text = intArray[0] //oluşturarak android uygulamanın ekranında görebiliriz.Tabi ekranda görebilmek için .XML dosyasının nasıl kullanıldığını ve TextView nasıl oluşturup kullanıldığı öğrenmiş olamanız lazım.
+
+// Ve Farklı bir çağırma şekli daha var Get() Metodu(fonksiyonu) ile : dizi_adi.get(Kaçıncı_indeksi_Çağıracaksın?) ; kullanımı şekllindedir.
+intArray.get(0) // 0. elemanı çağırdık ve bu çağırma yönteminide reelde görüntülemek istiyorsak konsol ve TextView ile çağırılan elemanı görüntüleye biliriz.
+
+
+// DİZİ BOYUTU ( ARRAY SİZE) : Dizide kaç eleman olduğu ya da sabit bir dizi için kaç tane eleman/veri girişi/bulunduğuna bakabiliriz. Bu özelliği Döngülerde(on the LOOPS) sıksık kulanıma ihtiyaç duyulur.
+
+vall diziBoyutu:Int = 0 // dizi boyutunu saklamak için bir değişken tanımladım
+diziBoyutu=intArray.size  // Dizi boyutunu bir istedik ve = (atama) ile değişkenin içinde sakladık.
 
 
 
