@@ -69,5 +69,25 @@ intArray.get(0) // 0. elemanı çağırdık ve bu çağırma yönteminide reelde
 vall diziBoyutu:Int = 0 // dizi boyutunu saklamak için bir değişken tanımladım
 diziBoyutu=intArray.size  // Dizi boyutunu bir istedik ve = (atama) ile değişkenin içinde sakladık.
 
+//____________________________________________________________ LIST or ArrayList ____________________________________________
+
+//  ArrayList Metodu'nun normal array'lerden farkı, Normal Array'i tanımlarken sabit bir değer verirken ArrayList'te sabit bir değer vermeden kullanırız.Normal Array ile ArrayList Arasındaki fark sadece bu kadardır.Kullanımları ve Yapıları bir birine çok benzer
+//  ArrayList tanımları şu şekilde : 5 farklı ArrayList Tanımı ,
+
+val arrayList: ArrayList<String> = ArrayList<String>()
+val arrayList2 = ArrayList<String>()
+val arrayList3 = ArrayList<Int>()
+val arrayList4 = ArrayList<Double>()
+val arrayList5 = ArrayList<HerHangiBirClass>()
+
+
+//       ArrayList’e item eklemek (add methodu)
+//       ArrayList’e item eklemek için add() methodunu kullanırız.
+
+
+
+
+
+
 
 
