@@ -4,13 +4,70 @@
 
 // 1. Kotlinde Array Nasıl Oluşturulur ? 
 
+/*
+
+Kotlin Dizi Tanımlama
+Sabit Boyutlu Dizi oluşturduğumuzda , diziye bir değer verdikten sonra dizinin boyutunu sonrada değitiremiyorumz.
+Sabit Boyutlu Bir Diziyi,
+val diziAdi = Array<Dizinin Tipi>(diziUzunluğu){başlangıç değerleri}
+şeklinde oluşturabiliriz. 
+
+*/
+
+val intArray = Array<Int>(1123){0} 
+val stringArray = Array<String>(1123){""}
+val doubleArray = Array<Double>(1123){1.0}
+val charArray = Array<Char>(1213){'A'}
 
 
+//Bu dizilere değer atamak için bir çok farklı yol var , bunlardan en yalın olanları şöyle : 
+
+intArray[0] = 43424332432  // Dizinin ilk elemanına değer atadık. Diziler  her zaman 0. elemanla başlar.Tabi Kullanıcı bunu isterse değiştire bilir ama 12.sırada da başlaya bilir . Ama varsayılar yani diziye müdahale edilmediği sürede 0.elemadan başlar.
+intArray[1] = 123
+intArray[2] = 4123
+    "       "   "
+    "       "   "
+    "       "   "
+intArray[1122] =  41233    // Dizinin son elemanınıda ekledik. Dikkat : Son elemanı dizinin boyutundan 1'eksiğinci sıradadır.
 
 
+ // Dizilere birde SET() Fonksiyonu-Metodu ile eleman ekleye biliriz. SET() Methodun Kullanımı :
+ //intArray.set(dizinin kaçıncı indeks-sırası ,Hangi int(tam sayı) değer eklenecek)
+ 
+intArray.set(0,43424332432) // Dizinin ilk elemanına değer atadık. Diziler  her zaman 0. elemanla başlar.Tabi Kullanıcı bunu isterse değiştire bilir ama 12.sırada da başlaya bilir . Ama varsayılar yani diziye müdahale edilmediği sürede 0.elemadan başlar.
+intArray.set(1,123)
+intArray.set(2, 4123)
+    "       "   "
+    "       "   "
+    "       "   "
+intArray.set(1122, 41233)    // Dizinin son elemanınıda ekledik. Dikkat : Son elemanı dizinin boyutundan 1'eksiğinci sıradadır.
 
 
+/*
+Diziden Değer Okuma
+Diziden değerleri diziAdi[indeks]  şeklinde veya diziAdi.get(indeks) şeklinde okuyabiliriz.
 
+
+Diziden Değerleri oku/Çağır/almak  ' tan sonra bunları istersen konsoldan istersekde her hangi bir yerde kullanabiliriz ve 
+görüntü sağlaya biliriz . 
+Konsoldan Ekrana ve Eğer .XML dosyanıda bir TextView oluşturulduğunu var sayarak  çekilen bilgileri bizim reelde görebileceğimiz durumu getireceğiz.
+*/
+
+// Diziden veri çekmek için :
+intArray[0] // dediğimizde bize dizinin 0. elemanını getirir. Eğer konsoldan görüntülemek istersek:
+println(intArray[0])  // ya da
+print(intArray[0]) // şeklinde görüntüleyebiliriz.
+//Ya da elinizde bir .XML dosyası ve bu dosya içersinde TextView oluşturup id:textView olan uygulamayı Android Uygulama arayüzünde görmek için:
+textView.text = intArray[0] //oluşturarak android uygulamanın ekranında görebiliriz.Tabi ekranda görebilmek için .XML dosyasının nasıl kullanıldığını ve TextView nasıl oluşturup kullanıldığı öğrenmiş olamanız lazım.
+
+// Ve Farklı bir çağırma şekli daha var Get() Metodu(fonksiyonu) ile : dizi_adi.get(Kaçıncı_indeksi_Çağıracaksın?) ; kullanımı şekllindedir.
+intArray.get(0) // 0. elemanı çağırdık ve bu çağırma yönteminide reelde görüntülemek istiyorsak konsol ve TextView ile çağırılan elemanı görüntüleye biliriz.
+
+
+// DİZİ BOYUTU ( ARRAY SİZE) : Dizide kaç eleman olduğu ya da sabit bir dizi için kaç tane eleman/veri girişi/bulunduğuna bakabiliriz. Bu özelliği Döngülerde(on the LOOPS) sıksık kulanıma ihtiyaç duyulur.
+
+vall diziBoyutu:Int = 0 // dizi boyutunu saklamak için bir değişken tanımladım
+diziBoyutu=intArray.size  // Dizi boyutunu bir istedik ve = (atama) ile değişkenin içinde sakladık.
 
 
 
