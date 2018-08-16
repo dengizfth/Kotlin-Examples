@@ -69,5 +69,71 @@ intArray.get(0) // 0. elemanı çağırdık ve bu çağırma yönteminide reelde
 vall diziBoyutu:Int = 0 // dizi boyutunu saklamak için bir değişken tanımladım
 diziBoyutu=intArray.size  // Dizi boyutunu bir istedik ve = (atama) ile değişkenin içinde sakladık.
 
+//____________________________________________________________ LIST or ArrayList ____________________________________________
+
+//  ArrayList Metodu'nun normal array'lerden farkı, Normal Array'i tanımlarken sabit bir değer verirken ArrayList'te sabit bir değer vermeden kullanırız.Normal Array ile ArrayList Arasındaki fark sadece bu kadardır.Kullanımları ve Yapıları bir birine çok benzer
+//  ArrayList tanımları şu şekilde : 5 farklı ArrayList Tanımı ,
+
+val arrayList: ArrayList<String> = ArrayList<String>()
+val arrayList2 = ArrayList<String>()
+val arrayList3 = ArrayList<Int>()
+val arrayList4 = ArrayList<Double>()
+val arrayList5 = ArrayList<HerHangiBirClass>()
+
+
+
+// #ArrayList’e item eklemek için add() methodunu kullanırız.
+
+
+// Yukarıda Tanımladığımız arrayList ' te veri şöyle eklenir.( karakter tipinde)
+arrayList.add("ilk veri eklendi : 0.dizine ") // ya da 
+arrayList.add(0,"ilk veri eklendi : 0.dizine ") // şeklinde 2 farklı kullanımı vardır.
+arrayList.add("ikinci veri eklendi")
+arrayList.add(1,"ikinci veri eklendi : 1.indeks-dizine")
+arrayList.add("üçüncü veri eklendi") // bu 2. dizine eklendi ama ben 2. dizine başka bir yazi ekleyebiliriim.
+arrayList.add(2,"Veriye Değiştirdim Artık 2.index-dizinde farklı vir veri duruyor.")
+
+// Yukarıda Tanımladığımız arrayList ' te veri şöyle eklenir.( Tam sayı tipinde)
+val arrayList2 = ArrayList<Int>()
+arrayList2.add(3) // 0.indekste(dizinde) 3 tam sayısını ekledik.
+arrayList2.add(1,5) // 1. indekste(dizinde) 5 tam sayısını ekledim.
+arrayList2.add(7)  // indeks numarası vermediğimiz için bir sonraki indekse eklendi yani 2.indekse eklendi.
+
+// #ArrayList’ten item almak (get methodu) kullanırız.
+// YUKARIDA EKLEDİKERİMİZ ŞİMDİ ÇAĞIRALIM ve bir değişkenin içine atayalım.
+
+var deger1: String = arrayList.get(0) //ArrayListin 0. elemanını almak için
+var deger2: String = arrayList.get(2) //ArrayListin 2. elemanını almak için
+var deger3: String = arrayList[3] //ArrayListin 3. elemanını almak için
+ 
+
+
+// ArrayList’ten item silmek (remove,removeAt) metodlarını kullanırız.
+// remove ile ArrayList'in içine kaydettiğimiz veriyi yazarak silebiliriz.
+// removeAt ile Arraylist'in indeks-dizin-sırası'daki veriyi sileriz . Kullanım Örneği :
+
+arrayList.remove("ilk veri eklendi : 0.dizine ") // yukarıdaki örnekte eklemiştik şimdi eklediğimiz veriyi sildik.Aslında veriyi kendi değeri ile silmiş olduk.
+
+arrayList.removeAt(2) // yukarıda örnekte 2. indeks-sıra-dizin'e eklediğimi string-karakter verisini indeks numarası ile sildim.
+
+
+//ARRAYLIST'te ÇOK KULLANACAĞIM BİR KAÇ METHOD : 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
