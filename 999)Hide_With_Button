@@ -1,0 +1,15 @@
+Button, EditText, TextView, ListView etc are the classes in android and there is a method 
+
+setVisibility()
+
+In which we can pass
+
+View.GONE
+View.VISIBLE
+View.INVISIBLE
+
+as required. See the samples.
+
+1.  button.setVisibility(View.GONE)  will hide the button and space acquired by button
+2.  button.setVisibility(View.INVISIBLE) will hide button only.
+3.  button.setVisibility(View.VISIBLE) will make button visible.
