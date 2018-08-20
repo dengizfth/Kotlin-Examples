@@ -120,20 +120,89 @@ arrayList.removeAt(2) // yukarıda örnekte 2. indeks-sıra-dizin'e eklediğimi 
 //ARRAYLIST'te ÇOK KULLANACAĞIM BİR KAÇ METHOD : 
 
 
+//SIZE  değişkeni : ArrayList’in uzunluğunu-Adet dönen bir değişkendir.
+
+var ElemanAdeddi = arrayList.size  // arrayList adındaki ArrayList'in içersindeki eleman adedini bir değişken içersine attık.
+
+
+//contains() methodu : Bir Array içersinde bir elemanın olup olmadığını kontrol eder . Eğer varsa True , Yoksa False Değer döndürür.
+arrayList.contains("ikinci veri eklendi) // True Değer döner çünkü yukarıda böyle bir veri girişi yapmıştık
+arrayList.contains ("Olmayan bir değer araştır") // False değer döner çünkü aradığım değer arrayList içersinde mevcut değil.
 
 
 
+//isEmpty() methodu : ArrayList’in içinde item var mı yok mu yani arrayList boş mu değil mi bilgisini döner.
+
+var yeniDizi = ArrayList<String>() 
+yeniDizi.isEmpty() // Oluşturduğumuz yeni dizi içersine bir veri eklemediğimiz için True değer döner çünkü Boşmu diye sorduk.
+
+
+//clear() methodu : ArrayList’in tüm elemanları siler.
+arrayList.clear() // artık arrayList içersinde hiçbir eleman bulunmamaktadır . Hepsini sildik.
+
+
+//indexOf() methodu : ArrayList’imizin içinde aradığımız item’in index’sini verir. Eğer aradığımız item arrayList’te yoksa -1 değeri döner.
+
+yeniDizi.Add("Veri veri") // yeniDizi adındaki dizimize yeni eleman ekledik.
+
+yeniDizi.indexOf("Veri veri") // bize sıra-indeks-bulunduğu dizinin numarasını verecek  : 0.dizin
+yeniDizi.indexOf("Olmayan veri ara") // indeks numarasını aradığımız şey yeniDizi'de olmadığı için : -1 'değer döndürür.
+
+//equals() methodu : ArrayList'lerdeki elemanları karşılaştırır. Aynı elemanlara sahip mi diye kontrol eder.
+
+yeniDizi.add("Fatih")
+yeniDizi.add("Dengiz")
+arrayList.add("clear'dan sonra ilk eleman ekledik")
+arrayList.add("Başarılar ilk adımlara ve adımların sürekliliğine bağlıdır.")
+
+yeniDizi.equals(yeniDizi) // iki dizinin elemanlarını karşılaştırdı . Aynı elemanlar mı var ? cevap : False dönder. çünkü dizilerin elemanları aynı değil.
+
+
+//ArrayList for ve foreach döngüsü
+//Çoğu zaman arrayList’in elemanlarını tek tek gezmemiz ve her bir itemine ulaşmamız gerekir.
+//Bunu for döngüsü ve ya foreach döngüsü ile yapabiliriz. Öncelikle for döngüsü ile başlayalım. (mobilhanem.com alıntı yapıldı.)
+
+
+val arrayList = ArrayList<String>()
+arrayList.add("Taha")
+arrayList.add("Mobilhanem")
+arrayList.add("Kotlin Dersleri")
+arrayList.add("Test")
+
+<strong>for(str in arrayList){</strong>
+<strong>    println(str)</strong>
+<strong>}</strong>
+
+Konsol Çıktısı:
+Taha 
+Mobilhanem 
+Kotlin Dersleri 
+Test
+
+//Yukarıda for döngüsü içinde arrayList’in tüm elemanları tek tek str değişkenine atadık ve sonrasında ekrana bastırdık.
+//Genel olarak ArrayList ve diğer listeleri dolaşırken for yerine foreach döngüsü kullanırız.
+
+
+val arrayList = ArrayList<String>()
+arrayList.add("Taha")
+arrayList.add("Mobilhanem")
+arrayList.add("Kotlin Dersleri")
+arrayList.add("Test")
+
+<strong>arrayList.forEach { str ->
+  println(str)
+}
+
+</strong>Konsol Çıktısı: 
+Taha 
+Mobilhanem 
+Kotlin Dersleri 
+Test
 
 
 
-
-
-
-
-
-
-
-
+//Yukarıdaki işlemde ise değerlerimiz tek tek yazmış olduğumuz str değişkenine atanıyor. 
+//Sonradan ekrana bastırıyoruz. Biz ekrana bastırma işlemlerini yaptık fakat siz farklı işlemler yaptırabilirsiniz.
 
 
 
