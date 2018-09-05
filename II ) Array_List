@@ -200,15 +200,3 @@ Test
 //Yukarıdaki işlemde ise değerlerimiz tek tek yazmış olduğumuz str değişkenine atanıyor. 
 //Sonradan ekrana bastırıyoruz. Biz ekrana bastırma işlemlerini yaptık fakat siz farklı işlemler yaptırabilirsiniz.
 
-
-******************************************************** KOTLINDE SET KULLANIMI ********************************************************************
-kotlin Set
-Koleksiyon oluşturmak için kullanabileceğimiz başka bir sınıf ise Set sınıfıdır. Set sınıfı ile oluşturulan bir koleksiyonda tekrarlanan öğeler bulunmaz. Map, List ve Arrayler de aynı eleman programda defalarca kullanılabilir veya birden fazla bulunabilir. Fakat Set sınıfında böyle bir durum söz konusu değildir. Set sınıfının içindeki öğeler bir dizi biçiminde değil, bir torbaya doldurulmuş biçimdedir şeklinde düşünülebilirler. Set kavramı Matematikteki Kümeler kavramından gelmektedir.
-
-Set sınıfı iki temel üzerine inşa edilmiştir :
-
-immutable : setOf() ile oluşturulan yapılarda sadece okuma işlemi yapılır.
-mutable : mutableSetOf() ile oluşturulan yapılarda ise üzerine ekleme, güncelleme ve silme işlemleri yapılabilir.
-İlerleyen derslerde bu metodlarla ilgili detaylı bir blog yazısı yayınlayacağım. Şimdilik temel olarak bu bilgiler yeterlidir.
-
-
